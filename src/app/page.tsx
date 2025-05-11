@@ -1,11 +1,12 @@
+import Banner from "@/components/banner";
+import Welcome from "@/components/welcome";
+
 export default function Home() {
-  const renderName = (name: any) => {
-    return name;
-  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div>salam yasamin zahra</div>
-      <div>{renderName('haj ali')}</div>
+    <div className="flex items-center justify-center flex-col h-screen">
+      <Banner />
+      <Welcome />
     </div>
   );
 }
